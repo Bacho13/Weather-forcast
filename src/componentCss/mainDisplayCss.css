@@ -1,0 +1,133 @@
+.mainDisplay {
+  width: 70%;
+  height: 45.833vw;
+  margin: 20px auto;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 100) -0.04%,
+    rgba(253, 187, 45, 100) 100%
+  );
+  border-radius: 30px;
+  position: relative;
+}
+.mainDisplayBackground {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  opacity: 50%;
+}
+.textCont {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 3.333vw 2.639vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nameOfWeekDay {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.569vw;
+  line-height: 3.125vw;
+}
+.date {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.528vw;
+  line-height: 1.875vw;
+  margin: 1.111vw 0;
+}
+.location {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.place {
+  margin-left: 0.694vw;
+}
+
+.sun {
+  font-size: 6.597vw;
+}
+.celsius {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.472vw;
+  line-height: 4.236vw;
+}
+.celsius span {
+  /* content: "\2103"; */
+  font-weight: 700;
+  margin-left: 0.694vw;
+}
+.tapeOfWeather {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.083vw;
+  line-height: 2.569vw;
+  margin-top: 0.903vw;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 425px) {
+  .mainDisplay {
+      width: 100%;
+      height: 70%;
+    }
+    .location, .celsius, .tapeOfWeather, .date, .nameOfWeekDay{
+        font-size: 10vw;
+    }
+    .sun{
+      font-size: 15vw;
+    }
+    .textCont{
+      padding: 10vw 7vw;
+    }
+    .date{
+      margin: 10vw 0;
+    }
+    
+    .celsius{
+      margin: 10vw 0;
+    }
+    
+
+}
+@media only screen and (max-width: 768px) {
+  .mainDisplay {
+      width: 100%;
+      height: 90%;
+    }
+    .location, .celsius, .tapeOfWeather, .date, .nameOfWeekDay{
+      font-size: 5vw;
+  }
+  .sun{
+    font-size: 10vw;
+  }
+  .textCont{
+    padding: 10vw 7vw;
+  }
+  .date{
+    margin: 5vw 0;
+  }
+  
+  .celsius{
+    margin: 5vw 0;
+  }
+}
+

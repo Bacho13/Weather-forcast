@@ -1,0 +1,31 @@
+.appContainer {
+  width: 65.556vw;
+  height: 100vh;
+  
+  margin: 0 auto;
+}
+.inputCity{
+  width: 70%;
+  height: 55px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.input{
+  width: 70%;
+  height: 100%;
+}
+.button{
+  height: 100%;
+}
+@media only screen and (max-width: 425px) {
+    .appContainer {
+        width: 90.556vw;
+       
+      }
+}
+@media only screen and (max-width: 768px) {
+    .appContainer {
+        width: 85vw;
+      }
+}
