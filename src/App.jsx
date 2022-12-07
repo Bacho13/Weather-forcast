@@ -58,7 +58,7 @@ function App() {
   // fetch lat and lon of the city from  API(need to fetch forcast data using lat and lon) .............................
   useEffect(() => {
     const data = fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${API_KEY}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${API_KEY}`
     ).then((response) => response.json());
     const givenData = Promise.resolve(data);
     givenData.then((value) => {
@@ -76,7 +76,7 @@ function App() {
   //  we got lat and lon now use tham and get actually forcast of the city
   useEffect(() => {
     const actuallyData = fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${cityCoord.lat}&lon=${cityCoord.lon}&units=metric&appid=${API_KEY}`
+      `http://api.openweathermap.org/data/2.5/weather?lat=${cityCoord.lat}&lon=${cityCoord.lon}&units=metric&appid=${API_KEY}`
     )
       .then((response) => response.json())
       .then((response) => {
